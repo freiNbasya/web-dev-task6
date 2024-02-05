@@ -1,0 +1,11 @@
+    <h1>APIs</h1>
+    <ul>
+        {% for api in apis %}
+            <li>
+                <strong>Request Link:</strong> {{ api.request_link }}<br>
+                <strong>Purpose:</strong> {{ api.purpose }}<br>
+                <strong>Example:</strong> {{ api.example }}<br>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="/app/users">Go to User List</a>
